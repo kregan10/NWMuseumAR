@@ -9,3 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.0.1]
 ### Added
 - CHANGELOG.md for keeping track of changes
+
+## [0.0.2]
+### Added
+- Added tutorial page placeholders
