@@ -62,4 +62,30 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerDele
         guard completed else { return }
         self.currentPage = pageViewController.viewControllers!.first!.view.tag
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        /*****  May want to implement an alert that comes up prompting the user if they want directions,
+                instead of just a button that asks them if they want directions.  Below is some of the code
+                that can help us do that
+        
+        let alertController = UIAlertController(title: "Need Directions?", message:
+            "Would you like directions to the Museum?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: { _ -> Void in
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "NavigateToMuseumController") as! NavigateToMuseumController
+            self.present(nextViewController, animated: true, completion: nil)
+        })
+        alertController.addAction(yesAction)
+        alertController.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default,handler: nil))
+        self.presentViewController(alert, animated: true){}
+        */
+
+    }
+    
+    func startNavigation() {
+        
+    }
 }
