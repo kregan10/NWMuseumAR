@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import MapKit
+import CoreLocation
 
 protocol NavigationViewControllerDelegate: class {
     func reset()
+    func startNavigation(with route: [POIAnnotation], for destination: CLLocation, and legs: [[CLLocationCoordinate2D]], and step: [MKRouteStep])
 }
 
